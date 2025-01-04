@@ -1,0 +1,39 @@
+﻿@model List<AgateProject.Data.Models.Campaign>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Campaign List</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Campaign ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Budget</th>
+        <th>Start Date</th>
+        <th>Finish Date</th>
+        <th>Completion State</th>
+        <th>Staffs</th>
+        <th>Clients</th>
+        <th>Contacts</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.CampaignID</td>
+            <td>@i.CampaignName</td>
+            <td>@i.CampaignDescription</td>
+            <td>@i.CampaignBudget</td>
+            <td>@i.StartDate</td>
+            <td>@i.FinishDate</td>
+            <td>@i.Completion</td>
+            <td><a href="/Campaign/CampaignStaffDetails/@i.CampaignID" class="btn btn-success">Staffs</a></td>
+            <td><a href="/Campaign/CampaignClientDetails/@i.CampaignID" class="btn btn-success">Clients</a></td>
+            <td><a href="/Campaign/CampaignContactDetails/@i.CampaignID" class="btn btn-success">Contacts</a></td>
+        </tr>
+    }
+</table>
+<a href="/Campaign/AddCampaign" class="btn btn-primary">New Campaign</a>

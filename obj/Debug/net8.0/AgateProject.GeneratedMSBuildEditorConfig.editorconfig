@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AgateProject
+build_property.RootNamespace = AgateProject
+build_property.ProjectDir = C:\Users\sezer\source\repos\AgateProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\sezer\source\repos\AgateProject
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/CampaignManager/AddCampaignManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25NYW5hZ2VyXEFkZENhbXBhaWduTWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/CampaignManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25NYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Campaign/AddCampaign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cQWRkQ2FtcGFpZ24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Campaign/CampaignClientDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cQ2FtcGFpZ25DbGllbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Campaign/CampaignContactDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cQ2FtcGFpZ25Db250YWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Campaign/CampaignStaffDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cQ2FtcGFpZ25TdGFmZkRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Campaign/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/CheckBudget/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tCdWRnZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/ClientContact/AddClientContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50Q29udGFjdFxBZGRDbGllbnRDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/ClientContact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50Q29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/ClientLogin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50TG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Client/AddClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEFkZENsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Client/ClientContactDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudENvbnRhY3REZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Shared/_LayoutClient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/StaffContact/AddStaffContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZDb250YWN0XEFkZFN0YWZmQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/StaffContact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZDb250YWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Staff/AddStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQWRkU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Staff/GetStaffForAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcR2V0U3RhZmZGb3JBc3NpZ24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Staff/GetStaffForContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcR2V0U3RhZmZGb3JDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sezer/source/repos/AgateProject/Views/Staff/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

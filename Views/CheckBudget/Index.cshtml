@@ -1,0 +1,89 @@
+﻿@model AgateProject.Data.Models.CampaignClientViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Check Campaign Budget</h2>
+<br />
+<form method="post" action="/YourController/YourAction">
+    <div>
+        <label for="campaign">Select Campaign:</label>
+        <select id="campaign" name="SelectedCampaignId" class="form-control">
+            <option value="">-- Select a Campaign --</option>
+            @foreach (var campaign in Model.Campaigns)
+            {
+                if (campaign.Completion == "No") {
+                <option value="@campaign.CampaignID">@campaign.CampaignName</option> }
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="client">Select Client:</label>
+        <select id="client" name="SelectedClientId" class="form-control">
+            <option value="">-- Select a Client --</option>
+            @foreach (var client in Model.Clients)
+            {
+                <option value="@client.ClientID">@client.ClientName</option>
+            }
+        </select>
+    </div>
+</form>
+    <br />
+    <button id="checkBudget" type="submit" class="btn btn-primary">Check</button>
+    <div id="campaignDetails"></div>
+    <br />
+    <button id="recordClientPayment" type="submit" class="btn btn-primary">Record Client Payment</button>
+<br />
+<div id="clientPaymentDetails"></div>
+<br />
+<script>
+    document.getElementById('checkBudget').addEventListener('click', function() {
+        var selectedCampaignId = document.getElementById('campaign').value;
+       
+        fetch(`/Campaign/GetCampaign/${selectedCampaignId}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                var detailsDiv = document.getElementById('campaignDetails');
+                detailsDiv.innerHTML = `<p><strong>Budget:</strong> ${data.campaignBudget}</p>`;
+            })
+            .catch(error => {
+                console.error('Error fetching campaign data:', error);
+            });
+    });
+
+</script>
+<script>
+    
+    document.getElementById('recordClientPayment').addEventListener('click', function () {
+    var selectedCampaignId = document.getElementById('campaign').value;
+    var selectedClientId = document.getElementById('client').value;
+       console.log(selectedCampaignId);
+    console.log(selectedClientId);
+    fetch('/Client/RecordClient', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            CampaignID: selectedCampaignId,
+            ClientID: selectedClientId
+        }),
+    })
+        .then(response => {
+                   var detailsDiv = document.getElementById('clientPaymentDetails');
+            if (response.ok) {
+                detailsDiv.innerHTML='<p><strong>Client payment recorded successfully!<strong></p>';
+            } else {      
+                detailsDiv.innerHTML='<p><strong>Failed to record client!<strong></p>';
+            }
+        })
+        .catch(error => console.error('Error recording client:', error));
+});
+
+
+</script>
+
+

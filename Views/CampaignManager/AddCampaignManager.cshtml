@@ -1,0 +1,21 @@
+﻿@model AgateProject.Data.Models.CampaignManager
+@{
+    ViewData["Title"] = "AddCampaignManager";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add New Campaign Manager</h1>
+<br />
+@using (Html.BeginForm("AddCampaignManager", "CampaignManager", FormMethod.Post))
+{
+    @Html.Label("Enter Campaign Manager Name:")
+    @Html.TextBoxFor(x => x.CampaignManagerName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Campaign Manager E-Mail:")
+    @Html.TextBoxFor(x => x.CampaignManagerEmail, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Campaign Manager Password:")
+    @Html.TextBoxFor(x => x.CampaignManagerPassword, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Add Campaign Manager</button>
+}

@@ -1,0 +1,18 @@
+﻿@model AgateProject.Data.Models.ClientContact
+@{
+    ViewData["Title"] = "AddClientContact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add Client Contact</h1>
+<br />
+@using (Html.BeginForm("AddClientContact", "ClientContact", FormMethod.Post))
+{
+    @Html.Label("Enter Client Contact Name:")
+    @Html.TextBoxFor(x => x.ClientContactName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Client ID:")
+    @Html.TextBoxFor(x => x.ClientID, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Add Client</button>
+}

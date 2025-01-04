@@ -1,0 +1,28 @@
+﻿@model List<AgateProject.Data.Models.CampaignManager>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Campaign Manager List</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Manager ID</th>
+        <th>Name</th>
+        <th>E-Mail</th>
+        <th>Password</th>
+        
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.CampaignManagerID</td>
+            <td>@i.CampaignManagerName</td>
+            <td>@i.CampaignManagerEmail</td>
+            <td>@i.CampaignManagerPassword</td>
+        </tr>
+    }
+</table>
+<a href="/CampaignManager/AddCampaignManager" class="btn btn-primary">New Campaign Manager</a>

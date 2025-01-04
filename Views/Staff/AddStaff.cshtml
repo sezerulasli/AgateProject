@@ -1,0 +1,18 @@
+﻿@model AgateProject.Data.Models.Staff
+@{
+    ViewData["Title"] = "AddStaff";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add Staff Contact</h1>
+<br />
+@using (Html.BeginForm("AddStaff", "Staff", FormMethod.Post))
+{
+    @Html.Label("Enter Staff  Name:")
+    @Html.TextBoxFor(x => x.StaffName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Campaign ID:")
+    @Html.TextBoxFor(x => x.CampaignID, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Add Staff</button>
+}

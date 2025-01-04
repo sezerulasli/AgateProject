@@ -1,0 +1,31 @@
+﻿@model AgateProject.Data.Models.Campaign
+@{
+    ViewData["Title"] = "AddCampaign";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Add New Campaign</h1>
+<br />
+@using (Html.BeginForm("AddCampaign", "Campaign", FormMethod.Post))
+{
+    @Html.Label("Enter Campaign Name:")
+    @Html.TextBoxFor(x => x.CampaignName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Campaign Description:")
+    @Html.TextBoxFor(x=> x.CampaignDescription, new { @class = "form-control"})
+    <br />
+    @Html.Label("Enter Campaign Budget:")
+    @Html.TextBoxFor(x => x.CampaignBudget, new { @class = "form-control"})
+    <br />
+    @Html.Label("Enter Start Date:")
+    @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+    <br />
+    @Html.Label("Enter Finish Date:")
+    @Html.TextBoxFor(x => x.FinishDate, new { @class = "form-control" })
+    <br />
+    @Html.Label("Completion State:")
+    @Html.DropDownListFor(x => x.Completion, new SelectList(new List<string>{"Yes","No"}),"Select Completion State",new{ @class = "form-control"})
+    <br />
+    <br />
+    <button class="btn btn-primary">Add Campaign</button>
+}
