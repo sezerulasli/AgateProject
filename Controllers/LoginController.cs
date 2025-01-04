@@ -73,17 +73,17 @@ namespace AgateProject.Controllers
                  await HttpContext.SignInAsync(principal);
                  return RedirectToAction("Index", "Campaign");
              }
-             var loginClientData = c.Clients.FirstOrDefault(x => x.ClientEmail == email && x.ClientPassword == password);
-             if (loginClientData != null)
+             var loginStaffContactData = c.StaffContacts.FirstOrDefault(x => x.StaffContactEmail == email && x.StaffContactPassword == password);
+             if (loginStaffContactData != null)
              {
-                 var claimsClient = new List<Claim>
+                 var claimsStaffContact = new List<Claim>
                  {
                      new Claim(ClaimTypes.Name, email)
                  };
-                 var useridentityClient = new ClaimsIdentity(claimsClient, "Login");
-                 ClaimsPrincipal principalClient = new ClaimsPrincipal(useridentityClient);
-                 await HttpContext.SignInAsync(principalClient);
-                 return RedirectToAction("Index", "ClientLogin");
+                 var useridentityStaffContact = new ClaimsIdentity(claimsStaffContact, "Login");
+                 ClaimsPrincipal principalStaffContact = new ClaimsPrincipal(useridentityStaffContact);
+                 await HttpContext.SignInAsync(principalStaffContact);
+                 return RedirectToAction("Index", "StaffContactLogin");
              }
              return View();
          } 

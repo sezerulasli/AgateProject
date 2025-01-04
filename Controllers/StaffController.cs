@@ -39,6 +39,8 @@ namespace AgateProject.Controllers
             {
                 StaffID = x.StaffID,
                 StaffName = x.StaffName,
+                StaffPassword = x.StaffPassword,
+                StaffEmail = x.StaffEmail,
                 CampaignID = x.CampaignID,
             };
             return View(st);
@@ -51,6 +53,8 @@ namespace AgateProject.Controllers
             {
                 StaffID = x.StaffID,
                 StaffName = x.StaffName,
+                StaffEmail = x.StaffEmail,
+                StaffPassword = x.StaffPassword,
                 CampaignID = x.CampaignID,
             };
             return View(st);
@@ -61,6 +65,8 @@ namespace AgateProject.Controllers
             var x = staffRepository.Get(staff.StaffID);
             x.StaffID = staff.StaffID;
             x.StaffName = staff.StaffName;
+            x.StaffEmail = staff.StaffEmail;
+            x.StaffPassword = staff.StaffPassword;  
             x.CampaignID = staff.CampaignID;
             staffRepository.Update(x);
             return RedirectToAction("Index");
@@ -72,6 +78,8 @@ namespace AgateProject.Controllers
             StaffContact st = new StaffContact()
             {
                 StaffContactName = x.StaffName,
+                StaffContactEmail = x.StaffEmail,
+                StaffContactPassword = x.StaffPassword,
                 CampaignID = x.CampaignID,
             };
             staffContactRepository.Add(st);

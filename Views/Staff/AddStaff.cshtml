@@ -11,6 +11,12 @@
     @Html.Label("Enter Staff  Name:")
     @Html.TextBoxFor(x => x.StaffName, new { @class = "form-control" })
     <br />
+    @Html.LabelFor(x => x.StaffEmail)
+    @Html.TextBoxFor(x => x.StaffEmail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.StaffPassword)
+    @Html.TextBoxFor(x => x.StaffPassword, new { @class = "form-control" })
+    <br />
     @Html.Label("Enter Campaign ID:")
     @Html.TextBoxFor(x => x.CampaignID, new { @class = "form-control" })
     <br />

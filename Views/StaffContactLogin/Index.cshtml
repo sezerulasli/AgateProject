@@ -1,0 +1,26 @@
+﻿@model List<AgateProject.Data.Models.ClientContact>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutStaffContact.cshtml";
+}
+
+<h2>Change Client Contact</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Client Contact ID</th>
+        <th>Client Contact Name</th>
+        <th>Client ID</th>
+        <th>Change Client Contact</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.ClientContactID</td>
+            <td>@i.ClientContactName</td>
+            <td>@i.ClientID</td>
+            <td><a href="/ClientContact/GetClientContact/@i.ClientContactID" class="btn btn-success">Change Client Contact</a></td>
+        </tr>
+    }
+</table>

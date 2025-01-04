@@ -9,6 +9,8 @@
     <tr>
         <th>Staff ID</th>
         <th>Name</th>
+        <th>E-Mail</th>
+        <th>Password</th>
         <th>Campaign ID</th>
     </tr>
     @foreach (var i in Model)
@@ -16,6 +18,8 @@
         <tr>
             <td>@i.StaffID</td>
             <td>@i.StaffName</td>
+            <td>@i.StaffEmail</td>
+            <td>@i.StaffPassword</td>
             <td>@i.CampaignID</td>
         </tr>
     }

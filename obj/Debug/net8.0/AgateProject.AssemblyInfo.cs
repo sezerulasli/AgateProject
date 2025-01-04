@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgateProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bf345fc28acc7c0a4fa84d3bd9fb4b92efc5c18")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgateProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgateProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

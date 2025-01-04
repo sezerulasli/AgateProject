@@ -281,3 +281,4 @@ C:\Users\sezer\source\repos\AgateProject\obj\Debug\net8.0\AgateProject.RazorAsse
 C:\Users\sezer\source\repos\AgateProject\obj\Debug\net8.0\AgateProject.RazorAssemblyInfo.cs
 C:\Users\sezer\source\repos\AgateProject\bin\Debug\net8.0\libman.json
 C:\Users\sezer\source\repos\AgateProject\bin\Debug\net8.0\AgateProject.staticwebassets.runtime.json
+C:\Users\sezer\source\repos\AgateProject\obj\Debug\net8.0\AgateProject.sourcelink.json
