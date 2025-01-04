@@ -10,7 +10,8 @@ namespace AgateProject.Data.Models
         public double ClientPayment {  get; set; }
         public string? ClientAddress { get; set; }
         public string? ClientEmail { get; set; }
-        public string? ClientPassword { get; set; }
+        public DateOnly CompletionDate { get; set; }
+        public string? CompletionState { get; set; }
         public int CampaignID { get; set; }
     }
 }

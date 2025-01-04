@@ -23,9 +23,5 @@
     @Html.Label("Enter Finish Date:")
     @Html.TextBoxFor(x => x.FinishDate, new { @class = "form-control" })
     <br />
-    @Html.Label("Completion State:")
-    @Html.DropDownListFor(x => x.Completion, new SelectList(new List<string>{"Yes","No"}),"Select Completion State",new{ @class = "form-control"})
-    <br />
-    <br />
     <button class="btn btn-primary">Add Campaign</button>
 }

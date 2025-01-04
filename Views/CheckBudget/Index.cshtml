@@ -12,9 +12,8 @@
         <select id="campaign" name="SelectedCampaignId" class="form-control">
             <option value="">-- Select a Campaign --</option>
             @foreach (var campaign in Model.Campaigns)
-            {
-                if (campaign.Completion == "No") {
-                <option value="@campaign.CampaignID">@campaign.CampaignName</option> }
+            {    
+                <option value="@campaign.CampaignID">@campaign.CampaignName</option> 
             }
         </select>
     </div>

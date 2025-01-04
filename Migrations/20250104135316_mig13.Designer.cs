@@ -4,6 +4,7 @@ using AgateProject.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgateProject.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20250104135316_mig13")]
+    partial class mig13
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,6 +40,9 @@ namespace AgateProject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CampaignName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Completion")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("FinishDate")

@@ -52,7 +52,10 @@ namespace AgateProject.Controllers
                 var campaign = c.Campaigns.FirstOrDefault(x => x.CampaignID == model.CampaignID);
                 if (campaign != null)
                 {
+                    DateOnly currentDate = DateOnly.FromDateTime(DateTime.Now);
                     client.ClientPayment = campaign.CampaignBudget;
+                    client.CompletionDate = currentDate;
+                    client.CompletionState = "Yes";
                 }
 
                 c.SaveChanges();
