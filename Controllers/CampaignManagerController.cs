@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgateProject.Controllers
 {
-    
+
     public class CampaignManagerController : Controller
     {
         CampaignManagerRepository campaignManagerRepository = new CampaignManagerRepository();

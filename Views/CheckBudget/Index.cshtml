@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Check Campaign Budget</h2>
+<h2 class="text-center">Check Campaign Budget</h2>
 <br />
 <form method="post" action="/YourController/YourAction">
     <div>
@@ -46,7 +46,7 @@
             .then(data => {
                 console.log(data);
                 var detailsDiv = document.getElementById('campaignDetails');
-                detailsDiv.innerHTML = `<p><strong>Budget:</strong> ${data.campaignBudget}</p>`;
+                detailsDiv.innerHTML = `<p><strong>Budget:</strong> ${data.campaignBudget} $</p>`;
             })
             .catch(error => {
                 console.error('Error fetching campaign data:', error);

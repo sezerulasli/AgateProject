@@ -4,15 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Add Client Contact</h1>
+<h2 class="text-center">Add Client Contact</h2>
 <br />
 @using (Html.BeginForm("AddClientContact", "ClientContact", FormMethod.Post))
 {
     @Html.Label("Enter Client Contact Name:")
     @Html.TextBoxFor(x => x.ClientContactName, new { @class = "form-control" })
     <br />
-    @Html.Label("Enter Client ID:")
-    @Html.TextBoxFor(x => x.ClientID, new { @class = "form-control" })
+    @Html.Label("Client Name:")
+    @Html.DropDownListFor(x => x.ClientID, (List<SelectListItem>)ViewBag.l1, new { @class = "form-control" })
     <br />
-    <button class="btn btn-primary">Add Client</button>
+    <button class="btn btn-primary">Add Client Contact</button>
 }

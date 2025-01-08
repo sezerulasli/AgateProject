@@ -4,15 +4,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Add Client</h1>
+<h2 class="text-center">Add Client</h2>
 <br />
 @using (Html.BeginForm("AddClient", "Client", FormMethod.Post))
 {
     @Html.Label("Enter Client Name:")
     @Html.TextBoxFor(x => x.ClientName, new { @class = "form-control" })
-    <br />
-    @Html.Label("Enter Payment Amount:")
-    @Html.TextBoxFor(x => x.ClientPayment, new { @class = "form-control" })
     <br />
     @Html.Label("Enter Client Address:")
     @Html.TextBoxFor(x => x.ClientAddress, new { @class = "form-control" })

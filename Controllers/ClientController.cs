@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgateProject.Controllers
 {
-    
+
     public class ClientController : Controller
     {
         Context c = new Context();
@@ -33,7 +33,7 @@ namespace AgateProject.Controllers
         [HttpGet]
         public IActionResult ClientContactDetails(int id)
         {
-            var clientContacts = c.ClientContacts.Where(x=>x.ClientID == id).ToList();
+            var clientContacts = c.ClientContacts.Where(x => x.ClientID == id).ToList();
             return View(clientContacts);
         }
 
@@ -41,14 +41,14 @@ namespace AgateProject.Controllers
         [HttpPost]
         public IActionResult RecordClient([FromBody] RecordClientModel model)
         {
-            
+
             var client = c.Clients.FirstOrDefault(x => x.ClientID == model.ClientID);
 
             if (client != null)
             {
                 client.CampaignID = model.CampaignID;
 
-               
+
                 var campaign = c.Campaigns.FirstOrDefault(x => x.CampaignID == model.CampaignID);
                 if (campaign != null)
                 {
@@ -65,7 +65,7 @@ namespace AgateProject.Controllers
             return NotFound(new { Message = "Client not found." });
         }
 
-       
+
         public class RecordClientModel
         {
             public int CampaignID { get; set; }

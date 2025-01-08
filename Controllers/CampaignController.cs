@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AgateProject.Controllers
 {
-    
+
     public class CampaignController : Controller
     {
         Context c = new Context();

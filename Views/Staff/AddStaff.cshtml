@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Add Staff Contact</h1>
+<h2 class="text-center">Add Staff</h2>
 <br />
 @using (Html.BeginForm("AddStaff", "Staff", FormMethod.Post))
 {
@@ -17,8 +17,8 @@
     @Html.LabelFor(x => x.StaffPassword)
     @Html.TextBoxFor(x => x.StaffPassword, new { @class = "form-control" })
     <br />
-    @Html.Label("Enter Campaign ID:")
-    @Html.TextBoxFor(x => x.CampaignID, new { @class = "form-control" })
+    @Html.Label("Campaign Name:")
+    @Html.DropDownListFor(x => x.CampaignID, (List<SelectListItem>)ViewBag.l1, new { @class = "form-control" })
     <br />
     <button class="btn btn-primary">Add Staff</button>
 }

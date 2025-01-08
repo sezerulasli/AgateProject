@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgateProject.Controllers
 {
-    
+
     public class StaffContactController : Controller
     {
         StaffContactRepository staffContactRepository = new StaffContactRepository();

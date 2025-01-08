@@ -2,22 +2,30 @@
 using AgateProject.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AgateProject.Controllers
 {
-   
+
     public class ClientContactController : Controller
     {
         Context c = new Context();
         ClientContactRepository clientContactRepository = new ClientContactRepository();
         public IActionResult Index()
         {
-            var clientContacts  = clientContactRepository.List();
+            var clientContacts = clientContactRepository.List();
             return View(clientContacts);
         }
         [HttpGet]
         public IActionResult AddClientContact()
         {
+            List<SelectListItem> list = (from item in c.Clients.ToList()
+                                         select new SelectListItem
+                                         {
+                                             Text = item.ClientName,
+                                             Value = item.ClientID.ToString()
+                                         }).ToList();
+            ViewBag.l1 = list;
             return View();
         }
         [HttpPost]
@@ -33,6 +41,13 @@ namespace AgateProject.Controllers
         [HttpGet]
         public IActionResult GetClientContact(int id)
         {
+            List<SelectListItem> list = (from item in c.Clients.ToList()
+                                         select new SelectListItem
+                                         {
+                                             Text = item.ClientName,
+                                             Value = item.ClientID.ToString()
+                                         }).ToList();
+            ViewBag.l1 = list;
             var values = c.ClientContacts.Where(x => x.ClientContactID == id).FirstOrDefault();
             return View(values);
         }
